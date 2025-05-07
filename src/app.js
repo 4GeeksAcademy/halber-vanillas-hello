@@ -11,11 +11,11 @@ window.onload = () => {
   let domains = [".com", ".es"]
   let allDomain = []
 
-  for (let pronoun = 0;  pronoun < pronouns.length; pronoun++) {
-    for (let adjetive = 0; djetive < adjectives.length; adjetive++) {
-      for (let noun = 0; noun < nouns.length; noun++) {
-        for (let domain = 0; domain < domains.length; domain++) {
-          allDomain.push(pronouns[pronoun] + adjectives[adjetive] + nouns[noun] + domains[domain]);
+  for (let pronoun of pronouns) {
+    for (let adjective of adjectives) {
+      for (let noun of nouns) {
+        for (let domain of domains) {
+          allDomain.push(`${pronoun}${adjective}${noun}${domain}`);
         }
       }
     }
